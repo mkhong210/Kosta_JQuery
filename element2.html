@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>element</title>
+    <!-- 25.04.01 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+      p {
+        background-color: yellow;
+        margin: 2px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello</p>
+    How are
+    <p>you?</p>
+    <button>Call remove() on paragraphs</button>
+
+    <script>
+      $("button").click(function () {
+        $("p").remove();
+      });
+      $("<b>Paragraph</b>").replaceAll("p");
+    </script>
+  </body>
+</html>

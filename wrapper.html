@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wrapper</title>
+    <!-- 25.03.31 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+    </ul>
+    <ul class="objlang">
+      <li>javascript</li>
+    </ul>
+
+    <script>
+      (function ($) {
+        // $를 사용하되 $를 jQuery로 인식하게 하여 다른 라이브러리와의 충돌 방지ㅐ
+        $("ul.objlang").click(function () {
+          $("li", this).css("background-color", "yellow");
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+    <!-- 25.04.01 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <input type="button" id="click_me" value="click me" />
+    <input type="button" id="remove_event" value="unbind" />
+    <input type="button" id="trigger_event" value="trigger" />
+
+    <script>
+      function clickHandler(e) {
+        alert("Thank you");
+      }
+
+      $("#click_me").bind("click", clickHandler);
+      $("#remove_event").bind("click", function (e) {
+        $("#click_me").unbind("click", clickHandler);
+      });
+
+      $("#trigger_event").bind("click", function (e) {
+        // trigger를 눌렀을 때 click_me가 눌리는 것(간접적)
+        $("#click_me").trigger("click");
+      });
+    </script>
+  </body>
+</html>

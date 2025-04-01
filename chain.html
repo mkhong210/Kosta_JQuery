@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chain</title>
+    <!-- 25.04.01 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <a href="https://jquery.com/" id="tutorial" target="_self">jQuery</a>
+
+    <script>
+      $("#tutorial")
+        .attr("href", "hnttp://jquery.org")
+        .attr("target", "_blank")
+        .css("color", "red");
+      // 주어 + 서술어 + 서술어 + 서술어
+    </script>
+  </body>
+</html>

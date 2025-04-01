@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제이쿼리</title>
+    <!-- 25.03.31 -->
+  </head>
+  <body>
+    <p id="pp">Hello World</p>
+    <button id="red" onclick="fn_click('red')">red</button>
+    <button id="blue" onclick="fn_click('blue')">blue</button>
+
+    <script>
+      $(document).ready(function () {
+        $("pp").css("color", "green");
+      });
+
+      function fn_click(color) {
+        $("pp").css("color", color);
+      }
+    </script>
+  </body>
+</html>

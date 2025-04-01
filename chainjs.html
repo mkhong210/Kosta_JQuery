@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chain</title>
+    <!-- 25.04.01 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <a href="https://jquery.com/" id="tutorial" target="_self">jQuery</a>
+
+    <script>
+      // $("#tutorial")
+      //   .attr("href", "hnttp://jquery.org")
+      //   .attr("target", "_blank")
+      //   .css("color", "red");
+
+      let tutorial = document.getElementById("tutorial"); // 나는
+      tutorial.setAttribute("href", "http:jiquery.org"); // 밥먹는다
+      tutorial.setAttribute("target", "_blank"); // 유튜브를 본다
+      tutorial.style.color = "red"; // 카톡한다.
+    </script>
+  </body>
+</html>

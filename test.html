@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Feed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        max-width: 900px;
+        width: 100%;
+      }
+      .feed-container {
+        flex: 2;
+        margin-right: 20px;
+      }
+      .sidebar {
+        flex: 1;
+        background: #1e1e1e;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+      }
+      .post {
+        background: #1e1e1e;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+      }
+      .tags {
+        margin-bottom: 10px;
+      }
+      .tag {
+        display: inline-block;
+        background: #333;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+      }
+      .movie-list {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+      }
+      .movie {
+        flex: 0 0 auto;
+        width: 100px;
+        text-align: center;
+      }
+      .movie img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .caption {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .sidebar h3 {
+        margin-bottom: 10px;
+      }
+      .random-movie {
+        text-align: center;
+      }
+      .random-movie img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="feed-container">
+        <div class="post">
+          <div class="tags">
+            <span class="tag">🎬 Fantasy</span>
+            <span class="tag">🔥 Action</span>
+            <span class="tag">🕵️ Mystery</span>
+          </div>
+          <div class="movie-list">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500/5gR5oCQufzZ6tPcFoHb61ckiwiP.jpg"
+                alt="Movie 1"
+              />
+              <p>Movie 1</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500/5gR5oCQufzZ6tPcFoHb61ckiwiP.jpg"
+                alt="Movie 2"
+              />
+              <p>Movie 2</p>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500/5gR5oCQufzZ6tPcFoHb61ckiwiP.jpg"
+                alt="Movie 3"
+              />
+              <p>Movie 3</p>
+            </div>
+          </div>
+          <div class="caption">
+            "These are some of my favorite movies! Highly recommended!"
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3>🎲 랜덤 추천 영화</h3>
+        <div class="random-movie">
+          <img
+            src="https://image.tmdb.org/t/p/w500/5gR5oCQufzZ6tPcFoHb61ckiwiP.jpg"
+            alt="Random Movie"
+          />
+          <p>Random Movie Title</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
