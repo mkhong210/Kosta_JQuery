@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <!-- 25.04.02 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+      div {
+        background-color: #bca;
+        width: 300px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="aniDiv">애니메이션</div>
+    <button id="aniButton">애니메이션시작</button>
+    <script>
+      $(document).ready(function () {
+        $("#aniButton").click(function () {
+          $("#aniDiv").animate(
+            {
+              left: "250px",
+              opacity: "0.5",
+              height: "+=150px",
+              width: "150px",
+            },
+            1000
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+    <!-- 25.04.02 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <script>
+      // $.ajax({
+      //   url: "https://jamsuham75.github.io/image/wraith.png",
+      //   method: "GET",
+      //   success: function (response) {
+      //     // response = 응답 메시지
+      //     console.log("성공 : ", response);
+      //   },
+      //   error: function (error) {
+      //     console.log("에러 : ", error);
+      //   },
+      // });
+
+      $.ajax({
+        url: "https://raw.githubusercontent.com/jamsuham75/image/main/test.json",
+        method: "GET",
+        success: function (response) {
+          // response = 응답 메시지
+          console.log("성공 : ", response);
+        },
+        error: function (error) {
+          console.log("에러 : ", error);
+        },
+      });
+    </script>
+  </body>
+</html>

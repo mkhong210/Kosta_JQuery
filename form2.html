@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <!-- 25.04.02 -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+      p {
+        color: blue;
+      }
+      div {
+        margin-left: 10px;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Type 'correct' to validate</p>
+
+    <form action="javascript:alert('성공')" method="get">
+      <div>
+        <input type="text" />
+        <input type="submit" value="요청보내기" />
+      </div>
+    </form>
+
+    <span></span>
+
+    <script>
+      $("form").submit(function () {
+        if ($("input:first").val() == "correct") {
+          $("span").text("Validated...").show();
+          return true;
+        }
+        $("span").text("Not Valide").show().fadeOut(3000);
+        return true;
+      });
+    </script>
+  </body>
+</html>
